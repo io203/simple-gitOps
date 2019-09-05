@@ -1,0 +1,21 @@
+######### 
+# Service
+#########
+
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple
+  labels:
+    app: simple
+spec:
+  selector:
+    app: simple
+  
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8088
+#    nodePort: 30001
+  type: LoadBalancer
