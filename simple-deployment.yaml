@@ -1,6 +1,5 @@
-apiVersion: argoproj.io/v1alpha1 # Changed from apps/v1
-kind: Rollout # Changed from Deployment
-# ----- Everything below this comment is the same as a deployment -----
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: simple
 spec:
@@ -14,14 +13,10 @@ spec:
         app: simple
     spec:
       containers:
-      - name: simple
-        image: asia.gcr.io/io203-101/simple:2.1
-        ports:
-        - containerPort: 8088
-  minReadySeconds: 30
-  revisionHistoryLimit: 3
-  strategy:
-  # ----- Everything above this comment are the same as a deployment -----
-    blueGreen: # A new field for the Blue Green strategy options
-      activeService: active-service
-      previewService: preview-service
+        - name: simple
+          image: asia.gcr.io/io203-101/simple:2.0
+          imagePullPolicy: Always
+          ports:
+            - name: http
+              containerPort: 8088
+
