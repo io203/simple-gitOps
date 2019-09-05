@@ -23,5 +23,5 @@ spec:
   strategy:
   # ----- Everything above this comment are the same as a deployment -----
     blueGreen: # A new field for the Blue Green strategy options
-      previewService: simple-preview # Reference to a service
-      activeService: simple-active # Reference to a service
+      activeService: active-service
+      previewService: preview-service
