@@ -1,4 +1,3 @@
-
 apiVersion: argoproj.io/v1alpha1 # Changed from apps/v1
 kind: Rollout # Changed from Deployment
 # ----- Everything below this comment is the same as a deployment -----
@@ -19,10 +18,11 @@ spec:
         image: asia.gcr.io/io203-101/simple:2.0
         ports:
         - containerPort: 8088
-  minReadySeconds: 120
+  minReadySeconds: 30
   revisionHistoryLimit: 3
   strategy:
   # ----- Everything above this comment are the same as a deployment -----
-    blueGreen: # A new field for the Blue Green strategy options
-      previewService: simple-preview # Reference to a service
-      activeService: simple-active # Reference to a service
+    canary: # A new field that used to provide configurable options for a Canary strategy
+      steps:
+      - setWeight: 20
+      - pause: {}
