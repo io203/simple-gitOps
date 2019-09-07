@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: simple
-        image: asia.gcr.io/io203-101/simple:2.2
+        image: asia.gcr.io/io203-101/simple:2.0
         ports:
         - containerPort: 8088
-  minReadySeconds: 30
+  minReadySeconds: 60
   revisionHistoryLimit: 3
   strategy:
   # ----- Everything above this comment are the same as a deployment -----
