@@ -19,7 +19,7 @@ spec:
         image: asia.gcr.io/io203-101/simple:2.0
         ports:
         - containerPort: 8088
-  minReadySeconds: 60
+  minReadySeconds: 120
   revisionHistoryLimit: 3
   strategy:
   # ----- Everything above this comment are the same as a deployment -----
