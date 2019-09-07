@@ -8,4 +8,4 @@ resources:
 
 images:
 - name: asia.gcr.io/io203-101/simple
-  newTag: "2.1"
+  newTag: "2.3"
