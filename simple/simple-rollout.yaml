@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: simple
-        image: asia.gcr.io/io203-101/simple:2.0
+        image: asia.gcr.io/io203-101/simple:2.1
         ports:
         - containerPort: 8088
   minReadySeconds: 120
