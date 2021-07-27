@@ -20,7 +20,7 @@ spec:
         image: saturn203/simple-api
         ports:
         - name: http
-          containerPort: 8088
+          containerPort: 8080
   minReadySeconds: 30
   revisionHistoryLimit: 3
   strategy:
