@@ -3,7 +3,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout 
 
 metadata:
-  name: simple-api
+  name: simple-api-rollout
   namespace: api
 spec:
   replicas: 2
