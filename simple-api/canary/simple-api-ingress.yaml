@@ -1,15 +1,16 @@
 apiVersion: projectcontour.io/v1
 kind: HTTPProxy
-metadata:
-  name:  simple-api-ingress
+metadata: 
+  labels:
+    app: simple-api
+  name: simple-api-httpproxy
   namespace: api
-spec:
+spec: 
   virtualhost:
-    fqdn: simple-api.demo.local
-  routes:
+    fqdn: simple-api.127.0.0.1.sslip.io
+  routes: 
     - conditions:
-      - prefix: / 
+      - prefix: /
       services:
         - name: simple-api-svc
           port: 8080
-
