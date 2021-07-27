@@ -5,6 +5,8 @@ resources:
 - simple-api-rollout.yaml
 - simple-api-svc-active.yaml
 - simple-api-svc-preview.yaml
+- simple-api-ingress-preview.yaml
+- simple-api-ingress.yaml
 
 images:
 - name: saturn203/simple-api
