@@ -13,4 +13,4 @@ spec:
       - prefix: /
       services:
         - name: simple-api-preview
-          port: 8080
+          port: 9009

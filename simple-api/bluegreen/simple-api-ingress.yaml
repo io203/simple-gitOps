@@ -13,4 +13,4 @@ spec:
       - prefix: /
       services:
         - name: simple-api-active
-          port: 8080
+          port: 8081
