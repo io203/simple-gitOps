@@ -10,6 +10,6 @@ resources:
 
 images:
 - name: saturn203/simple-api
-  newTag: "prod-slime-v1.4"
+  newTag: "prod-slime-v1.5"
 
 
