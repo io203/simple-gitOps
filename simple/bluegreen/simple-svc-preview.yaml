@@ -15,7 +15,7 @@ spec:
   
   ports:
   - protocol: TCP
-    port: 80
-    targetPort: 8088
+    port: 9009
+    targetPort: http
 #    nodePort: 30001
-  type: LoadBalancer
+#  type: LoadBalancer
