@@ -16,3 +16,14 @@ spec:
             name: simple-api-active
             port:
               number: 8081
+  - host: "preview.simple-api.127.0.0.1.sslip.io"
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: simple-api-preview
+            port:
+              number: 9009
+
