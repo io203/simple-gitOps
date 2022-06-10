@@ -4,7 +4,3 @@ spec:
   source:
     repoURL: https://github.com/io203/simple-gitOps.git
     targetRevision: master
-  syncPolicy:
-    automated: 
-      prune: false 
-      selfHeal: false  

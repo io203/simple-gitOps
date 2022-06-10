@@ -7,14 +7,11 @@ metadata:
   - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: api
+    namespace: fe
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
     path: simple-fe/rolling
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
-  syncPolicy:
-    automated: 
-      prune: {{ .Values.spec.syncPolicy.automated.prune }} 
-      selfHeal:  {{ .Values.spec.syncPolicy.automated.selfHeal }} 
+ 
