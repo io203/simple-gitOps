@@ -14,3 +14,7 @@ spec:
     path: simple-api/rolling
     repoURL: {{ .Values.spec.source.repoURL }}
     targetRevision: {{ .Values.spec.source.targetRevision }}
+  syncPolicy:
+    automated: 
+      prune: {{ .Values.spec.syncPolicy.automated.prune }} 
+      selfHeal:  {{ .Values.spec.syncPolicy.automated.selfHeal }}    
