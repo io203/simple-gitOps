@@ -8,6 +8,6 @@ resources:
 
 images:
 - name: saturn203/simple-fe
-  newTag: "k8s-v1.1"
+  newTag: "k8s-v1.2"
 
 
