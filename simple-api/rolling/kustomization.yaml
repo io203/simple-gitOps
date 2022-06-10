@@ -10,6 +10,6 @@ resources:
 
 images:
 - name: saturn203/simple-api
-  newTag: "k8s-v1.1"
+  newTag: "k8s-v1.2"
 
 
