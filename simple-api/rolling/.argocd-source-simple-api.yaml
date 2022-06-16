@@ -1,3 +1,0 @@
-kustomize:
-  images:
-  - saturn203/simple-api:v2.0.8
