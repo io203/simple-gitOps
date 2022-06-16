@@ -5,4 +5,4 @@ resources:
 - simple-api-deploy.yaml
 images:
 - name: saturn203/simple-api
-  newTag: v2.0.12
+  newTag: v2.0.13
