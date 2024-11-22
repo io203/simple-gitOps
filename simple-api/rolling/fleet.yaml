@@ -2,4 +2,4 @@ namespace: api
 targetCustomizations:
   - name: develop
     kustomize: 
-      dir: ./
+      dir: ""
