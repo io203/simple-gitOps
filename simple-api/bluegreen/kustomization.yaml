@@ -10,4 +10,4 @@ resources:
 
 images:
 - name: saturn203/simple-api
-  newTag: RB0.0.51
+  newTag: test-1
